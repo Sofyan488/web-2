@@ -1,0 +1,72 @@
+
+body {
+    background-color: #F4F5FE;
+  }
+  
+
+  .navbar {
+    border-bottom: 1px solid #E8E8E8;
+  }
+  
+
+  .hero-section {
+    padding: 80px 0;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+ 
+  .btn-primary {
+    background-color: #FF4A8D; 
+    border-color: #FF4A8D;
+  }
+  
+  
+  .btn-outline-secondary {
+    border: 2px solid #FF4A8D;
+    color: #FF4A8D;
+    background-color: transparent;
+  }
+  .btn-outline-secondary:hover {
+    background-color: #FF4A8D;
+    color: #fff;
+  }
+  
+
+  .navbar .btn-secondary {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+  }
+  
+
+  .image-placeholder {
+    background-color: #d1d1d1;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+  
+ 
+  .brand-logos {
+    padding: 30px 0;
+  }
+  .brand-logos img {
+    max-width: 80px;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
+  
