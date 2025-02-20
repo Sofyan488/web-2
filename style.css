@@ -8,7 +8,7 @@ body {
     border-bottom: 1px solid #E8E8E8;
   }
   
-
+  
   .hero-section {
     padding: 80px 0;
   }
@@ -23,12 +23,11 @@ body {
     margin-bottom: 40px;
   }
   
- 
+  
   .btn-primary {
     background-color: #FF4A8D; 
     border-color: #FF4A8D;
   }
-  
   
   .btn-outline-secondary {
     border: 2px solid #FF4A8D;
@@ -59,7 +58,7 @@ body {
     font-size: 1.1rem;
   }
   
- 
+
   .brand-logos {
     padding: 30px 0;
   }
