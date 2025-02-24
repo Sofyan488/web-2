@@ -1,71 +1,175 @@
 
-body {
-    background-color: #F4F5FE;
-  }
-  
+.top-bar {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
 
-  .navbar {
-    border-bottom: 1px solid #E8E8E8;
-  }
-  
-  
-  .hero-section {
-    padding: 80px 0;
-  }
-  .hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .hero-description {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 40px;
-  }
-  
-  
-  .btn-primary {
-    background-color: #FF4A8D; 
-    border-color: #FF4A8D;
-  }
-  
-  .btn-outline-secondary {
-    border: 2px solid #FF4A8D;
-    color: #FF4A8D;
-    background-color: transparent;
-  }
-  .btn-outline-secondary:hover {
-    background-color: #FF4A8D;
-    color: #fff;
-  }
-  
-
-  .navbar .btn-secondary {
-    background-color: #6C63FF;
-    border-color: #6C63FF;
-  }
-  
-
-  .image-placeholder {
-    background-color: #d1d1d1;
-    height: 300px;
-    width: 100%;
+.top-bar .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: #888;
-    border-radius: 8px;
-    font-size: 1.1rem;
-  }
-  
+}
 
-  .brand-logos {
-    padding: 30px 0;
-  }
-  .brand-logos img {
-    max-width: 80px;
-    margin: 0 20px;
-    filter: grayscale(100%);
-    opacity: 0.8;
-  }
-  
+.top-bar span {
+    font-weight: bold;
+}
+
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero {
+   background: url('https://f.hubspotusercontent-eu1.net/hubfs/25306451/Applixure_December2021/Images/improvingendusersatisfactionwithitdata.jpg') no-repeat center ;
+    color: white;
+    padding: 160px 20px;
+    margin: 0px 50px;
+    position: relative;
+ 
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    font-size: 18px;
+    padding: 12px 30px;
+}
+
+.hero .btn-primary {
+    background: #007bff;
+    border: none;
+}
+
+.hero .btn-primary:hover {
+    background: #0056b3;
+}
+
+.hero .btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.hero .btn-outline-light:hover {
+    background: white;
+    color: black;
+}
+
+
+.contact-info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-info i {
+    color: #007bff;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
